@@ -17,6 +17,10 @@ export default {
         "oo-surface-soft": "oklch(74.932% 0.02982 79.394 / 0.2)",
         "oo-surface-dim": "oklch(74.932% 0.02982 79.394 / 0.302)",
       },
+      fontFamily: {
+        "oo-display": ["WFVisualSans", "serif", "sans-serif"],
+        "oo-body": ["MonaSans", "serif", "sans-serif"],
+      },
       padding: {
         "oo-hero-top": "18.6vh",
         "oo-hero-bottom": "15.8vh",

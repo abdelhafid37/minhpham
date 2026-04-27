@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "WFVisualSans";
+  src: url("/fonts/WFVisualSansRegularText.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "WFVisualSans";
+  src: url("/fonts/WFVisualSansSemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "MonaSans";
+  src: url("/fonts/MonaSans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
 @layer base {
   body {
-    @apply bg-oo-neutral-900;
+    @apply bg-oo-neutral-900 font-oo-body;
   }
 }
