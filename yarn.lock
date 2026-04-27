@@ -691,6 +691,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "autoprefixer@npm:10.5.0"
+  dependencies:
+    browserslist: "npm:^4.28.2"
+    caniuse-lite: "npm:^1.0.30001787"
+    fraction.js: "npm:^5.3.4"
+    picocolors: "npm:^1.1.1"
+    postcss-value-parser: "npm:^4.2.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 10c0/3e1a7bb65ef3a44925d19fd18cbb96a9a73ef1a8bfaa134bc131743787a8983045d6e756cff0204d37c34a52cfc86d79182f444c221b631401f79d7873ae97a8
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^4.0.2":
   version: 4.0.4
   resolution: "balanced-match@npm:4.0.4"
@@ -699,11 +716,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.22
-  resolution: "baseline-browser-mapping@npm:2.10.22"
+  version: 2.10.23
+  resolution: "baseline-browser-mapping@npm:2.10.23"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/7aa7bfee979a5ae61355407411fd1e9c79070b130576497a55455ff5591b0f228b07138968f0fe98f3df5804838016e73a6bbb4b24154da5f0c98c7b1590b389
+  checksum: 10c0/b2c167b9b46dc1c0c6a2c2ccc24469910f22ca953fa591dcff7a222a69aa864b8172f3fdff851da00de307732752b87b1e23a0b4b416f024e5608facdbc461c4
   languageName: node
   linkType: hard
 
@@ -732,7 +749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.24.0":
+"browserslist@npm:^4.24.0, browserslist@npm:^4.28.2":
   version: 4.28.2
   resolution: "browserslist@npm:4.28.2"
   dependencies:
@@ -754,7 +771,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001782":
+"caniuse-lite@npm:^1.0.30001782, caniuse-lite@npm:^1.0.30001787":
   version: 1.0.30001791
   resolution: "caniuse-lite@npm:1.0.30001791"
   checksum: 10c0/53c8b5dad1c196a5e495405a7d2dc1db58aed9be02f60cf2a2e29d2c8d8cbb6c39beabf958d6aa191ab967ddcf49f22319452256b980bad1e271615acfe58940
@@ -1145,6 +1162,13 @@ __metadata:
   version: 3.4.2
   resolution: "flatted@npm:3.4.2"
   checksum: 10c0/a65b67aae7172d6cdf63691be7de6c5cd5adbdfdfe2e9da1a09b617c9512ed794037741ee53d93114276bff3f93cd3b0d97d54f9b316e1e4885dde6e9ffdf7ed
+  languageName: node
+  linkType: hard
+
+"fraction.js@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "fraction.js@npm:5.3.4"
+  checksum: 10c0/f90079fe9bfc665e0a07079938e8ff71115bce9462f17b32fc283f163b0540ec34dc33df8ed41bb56f028316b04361b9a9995b9ee9258617f8338e0b05c5f95a
   languageName: node
   linkType: hard
 
@@ -1591,6 +1615,7 @@ __metadata:
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
     "@vitejs/plugin-react": "npm:^6.0.1"
+    autoprefixer: "npm:^10.5.0"
     eslint: "npm:^10.2.1"
     eslint-plugin-react-hooks: "npm:^7.1.1"
     eslint-plugin-react-refresh: "npm:^0.5.2"
@@ -1598,9 +1623,10 @@ __metadata:
     gsap: "npm:^3.15.0"
     howler: "npm:^2.2.4"
     lenis: "npm:^1.3.23"
+    postcss: "npm:^8.5.12"
     react: "npm:^19.2.5"
     react-dom: "npm:^19.2.5"
-    tailwindcss: "npm:^3.4.19"
+    tailwindcss: "npm:3"
     vite: "npm:^8.0.10"
   languageName: unknown
   linkType: soft
@@ -1879,21 +1905,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^4.0.0":
+"postcss-value-parser@npm:^4.0.0, postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 10c0/f4142a4f56565f77c1831168e04e3effd9ffcc5aebaf0f538eee4b2d465adfd4b85a44257bb48418202a63806a7da7fe9f56c330aebb3cac898e46b4cbf49161
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.47, postcss@npm:^8.5.10":
-  version: 8.5.11
-  resolution: "postcss@npm:8.5.11"
+"postcss@npm:^8.4.47, postcss@npm:^8.5.10, postcss@npm:^8.5.12":
+  version: 8.5.12
+  resolution: "postcss@npm:8.5.12"
   dependencies:
     nanoid: "npm:^3.3.11"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/ade51634ff804a143b5bbdb55b0b2cc762a30261d352cf1d7468cca7db7921a4a64f4857d2aa9af76cc24493d67fe1e3cb76cae6c6310a4e844b0f783973e7ed
+  checksum: 10c0/5baebaf574c567bc1b3d61197f38af4ce5920b8f611c887fb6bc3dcc14af00253c169dbf19897bc889cce0b0d9818ab5eb4ea0caedf02b0bab10da8a43ce8c12
   languageName: node
   linkType: hard
 
@@ -2136,7 +2162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.19":
+"tailwindcss@npm:3":
   version: 3.4.19
   resolution: "tailwindcss@npm:3.4.19"
   dependencies:

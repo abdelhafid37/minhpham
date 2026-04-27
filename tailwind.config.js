@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: [],
   theme: {
     extend: {
       colors: {
@@ -9,11 +9,9 @@ export default {
         "oo-neutral-500": "oklch(56.584% 0.00006 271.152)",
         "oo-neutral-400": "oklch(42.024% 0.00005 271.152)",
         "oo-neutral-100": "oklch(95.514% 0.00011 271.152)",
-
         "oo-accent-primary": "oklch(65.166% 0.18691 33.924)",
         "oo-accent-dim": "oklch(71.619% 0.0877 73.136)",
         "oo-accent-pink": "oklch(70.684% 0.18697 33.482 / 0.502)",
-
         "oo-surface-cream": "oklch(74.932% 0.02982 79.394 / 0.502)",
         "oo-surface-milk": "oklch(74.932% 0.02982 79.394 / 0.149)",
         "oo-surface-soft": "oklch(74.932% 0.02982 79.394 / 0.2)",
