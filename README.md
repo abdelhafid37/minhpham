@@ -1,1 +1,1 @@
-# Minh Pham Remake
+![Minh Pham Portfolio Remake](/public/images/readme-banner.png)

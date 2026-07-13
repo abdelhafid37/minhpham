@@ -2,7 +2,19 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        red: "rgba(235, 89, 57, 1)",
+        dark: "rgba(13, 13, 13, 1)",
+        accent: "rgba(183, 171, 152, 1)",
+        "accent-light": "rgba(184, 172, 153, 0.5)",
+        "dark-gray": "rgba(77, 77, 77, 1)",
+      },
+      fontFamily: {
+        display: ["Avant Garde", "sans-serif"],
+        sans: ["Nunito Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
