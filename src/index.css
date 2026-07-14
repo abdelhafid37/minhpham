@@ -13,7 +13,15 @@
 }
 
 @layer base {
+  html {
+    @apply text-[calc(7.92453px+1.88679vw)] md:text-[calc(8px+.78125vw)] lg:text-[.9259259259vw];
+  }
+
   body {
-    @apply bg-dark text-accent font-display;
+    @apply bg-dark text-accent font-display md:min-h-screen;
+
+    & * {
+      @apply select-none;
+    }
   }
 }

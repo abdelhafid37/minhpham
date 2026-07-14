@@ -14,6 +14,17 @@ export default {
         display: ["Avant Garde", "sans-serif"],
         sans: ["Nunito Sans", "sans-serif"],
       },
+      screens: {
+        lg: "1200px",
+      },
+      letterSpacing: {
+        tight: "-.03em",
+        widest: ".5em",
+      },
+      lineHeight: {
+        110: "110%",
+        180: "180%",
+      },
     },
   },
   plugins: [],
