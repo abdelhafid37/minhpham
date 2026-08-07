@@ -25,3 +25,7 @@
     }
   }
 }
+
+.clip-inset {
+  clip-path: inset(0);
+}

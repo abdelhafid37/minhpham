@@ -23,7 +23,29 @@ export default {
       },
       lineHeight: {
         110: "110%",
+        130: "130%",
         180: "180%",
+      },
+      zIndex: {
+        9: 9,
+      },
+      margin: {
+        top: ".3125rem",
+      },
+      spacing: {
+        "screen-x": "1.25rem",
+        "screen-x-md": "2.6666666667vw",
+        "screen-x-lg": "4.0509259259vw",
+        top: "1.25rem",
+        "top-md": "2.5rem",
+        "top-lg": "6.5476190476vh",
+      },
+      fontSize: {
+        description: ".875rem",
+      },
+      padding: {
+        nav: ".25rem",
+        "nav-lg": ".375rem",
       },
     },
   },
