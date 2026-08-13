@@ -1,17 +1,16 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
-import { Logo } from "../icons";
 import TextFlip from "./TextFlip";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-const links = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
-];
+import { HEADER } from "@/constants/content";
+import useMagnet from "@/hooks/useMagnet";
 
 export default function Header() {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const { links, Logo } = HEADER;
+  const logoRef = useMagnet();
 
   useGSAP(() => {
     links.forEach((link, index) =>
@@ -28,7 +27,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-9 mix-blend-difference">
       <div className="fixed left-screen-x top-top md:left-screen-x-md md:top-top-md lg:top-top-lg lg:left-screen-x-lg mt-top">
-        <a href="/">
+        <a ref={logoRef} href="/" className="block">
           <Logo className="size-8 lg:size-12" />
         </a>
       </div>
