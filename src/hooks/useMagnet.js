@@ -5,7 +5,7 @@ import { useRef } from "react";
 /**
  *
  * @param {*} damping (optional) the higher the value, the stickier it gets
- * @returns
+ * @returns mutable reference object
  */
 export default function useMagnet({ damping = 0.12 } = {}) {
   const ref = useRef(null);
