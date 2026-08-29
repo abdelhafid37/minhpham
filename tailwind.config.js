@@ -27,7 +27,9 @@ export default {
         180: "180%",
       },
       zIndex: {
+        1: 1,
         9: 9,
+        preloader: 99999999,
       },
       margin: {
         top: ".3125rem",

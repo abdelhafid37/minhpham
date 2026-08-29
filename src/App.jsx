@@ -5,6 +5,7 @@ import gsap from "gsap";
 // import Preloader from "./components/ui/Preloader";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "./components/ui/Footer";
+import ResizingOverlay from "./components/ui/ResizingOverlay";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +16,7 @@ function App() {
         {/* <Preloader /> */}
         <Header />
         <Footer />
+        <ResizingOverlay />
       </IntroProvider>
     </ReactLenis>
   );

@@ -88,7 +88,7 @@ function Preloader() {
   return (
     <div
       ref={preloaderWrapperRef}
-      className="fixed inset-0 z-[99999999] bg-dark flex items-center justify-center size-full will-change-[opacity]"
+      className="fixed inset-0 z-preloader bg-dark flex items-center justify-center size-full will-change-[opacity]"
       style={{
         "--progress-offset": MAX_OFFSET,
         "--size-circle": "16.875rem",
