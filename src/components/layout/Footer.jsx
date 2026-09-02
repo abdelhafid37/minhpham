@@ -1,6 +1,7 @@
 import { FOOTER } from "@/constants/content";
-import Button from "./Button";
+// import Button from "./Button";
 import useMagnet from "@/hooks/useMagnet";
+import Button from "../ui/Button";
 
 export default function Footer() {
   const { links } = FOOTER;
@@ -24,13 +25,7 @@ function SocialLink({ children, href, label }) {
 
   return (
     <li ref={linkRef} className="mb-li last:mb-0">
-      <a
-        className="block leading-none p-li"
-        href={href}
-        aria-label={label}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a className="block leading-none p-li" href={href} aria-label={label} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
     </li>

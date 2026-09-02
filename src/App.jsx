@@ -4,8 +4,8 @@ import gsap from "gsap";
 // import Preloader from "./components/ui/Preloader";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ResizingOverlay from "./components/ui/ResizingOverlay";
-import FakeLayer from "./components/layout/FakeLayer";
-import TrueLayer from "./components/layout/TrueLayer";
+// import FakeLayer from "./components/layout/FakeLayer";
+// import TrueLayer from "./components/layout/TrueLayer";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
@@ -18,8 +18,8 @@ function App() {
         {/* <Preloader /> */}
         <Header />
         <main>
-          <FakeLayer />
-          <TrueLayer />
+          {/* <FakeLayer /> */}
+          {/* <TrueLayer /> */}
         </main>
         <Footer />
         <ResizingOverlay />
