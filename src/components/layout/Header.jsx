@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import TextFlip from "./TextFlip";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HEADER } from "@/constants/content";
 import useMagnet from "@/hooks/useMagnet";
+import TextFlip from "../ui/TextFlip";
 
 export default function Header() {
   const [activeIndex, setActiveIndex] = useState(0);
