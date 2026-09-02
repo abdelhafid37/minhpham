@@ -1,3 +1,9 @@
+import MobileFrame from "../ui/MobileFrame";
+
 export default function FakeLayer() {
-  return <div>FakeLayer</div>;
+  return (
+    <div>
+      <MobileFrame />
+    </div>
+  );
 }

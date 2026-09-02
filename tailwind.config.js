@@ -29,6 +29,7 @@ export default {
       zIndex: {
         1: 1,
         9: 9,
+        4: 4,
         preloader: 99999999,
       },
       margin: {
@@ -64,6 +65,13 @@ export default {
         nav: ".25rem",
         "nav-lg": ".375rem",
         li: ".625rem",
+      },
+      backgroundImage: {
+        "linear-gradient-to-bottom": "linear-gradient(1turn, hsla(0, 0%, 5%, 0), #0c0c0c 92.91%)",
+        "linear-gradient-to-top": "linear-gradient(0deg, #0c0c0c 31.25%,hsla(0, 0%, 5%, 0) 92.91%)",
+      },
+      content: {
+        empty: "''",
       },
     },
   },
