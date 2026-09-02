@@ -1,5 +1,4 @@
 import { FOOTER } from "@/constants/content";
-// import Button from "./Button";
 import useMagnet from "@/hooks/useMagnet";
 import Button from "../ui/Button";
 
