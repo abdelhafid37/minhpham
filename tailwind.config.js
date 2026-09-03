@@ -73,6 +73,22 @@ export default {
       content: {
         empty: "''",
       },
+      animation: {
+        "rotate-ring": "spin 10s infinite forwards linear",
+      },
+      keyframes: {
+        spin: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": {
+            transform: "rotate(1turn)",
+          },
+          "100%": {
+            transform: "rotate(2turn)",
+          },
+        },
+      },
     },
   },
   plugins: [],
