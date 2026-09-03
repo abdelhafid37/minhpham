@@ -8,6 +8,8 @@ import FakeLayer from "./components/layout/FakeLayer";
 // import TrueLayer from "./components/layout/TrueLayer";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import Audio from "./components/ui/Audio";
+import AudioProvider from "./context/AudioProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,14 +17,17 @@ function App() {
   return (
     <ReactLenis root>
       <IntroProvider>
-        {/* <Preloader /> */}
-        <Header />
-        <main>
-          <FakeLayer />
-          {/* <TrueLayer /> */}
-        </main>
-        <Footer />
-        <ResizingOverlay />
+        <AudioProvider>
+          {/* <Preloader /> */}
+          <Header />
+          <main>
+            <FakeLayer />
+            {/* <TrueLayer /> */}
+          </main>
+          <Footer />
+          <ResizingOverlay />
+          <Audio />
+        </AudioProvider>
       </IntroProvider>
     </ReactLenis>
   );

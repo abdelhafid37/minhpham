@@ -1,6 +1,7 @@
+import useAudio from "@/hooks/useAudio";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 function slideYTween(target, { from, to }) {
   gsap.fromTo(
@@ -16,7 +17,7 @@ function slideYTween(target, { from, to }) {
 }
 
 export default function Button() {
-  const [play, setPlay] = useState(false);
+  const { isPlaying, setIsPlaying } = useAudio();
 
   const onRef = useRef(null);
   const offRef = useRef(null);
@@ -29,23 +30,23 @@ export default function Button() {
 
     if (!on || !off) return;
 
-    if (play) {
+    if (isPlaying) {
       slideYTween(on, { from: 100, to: 0 });
       slideYTween(off, { from: 0, to: -100 });
     } else {
       slideYTween(on, { from: 0, to: -100 });
       slideYTween(off, { from: 100, to: 0 });
     }
-  }, [play]);
+  }, [isPlaying]);
+
+  useGSAP(() => {}, []);
 
   return (
     <button
-      onClick={() => setPlay((prev) => !prev)}
+      onClick={() => setIsPlaying((prev) => !prev)}
       className="fixed flex overflow-hidden text-desc lg:text-desc-lg uppercase gap-gap px-1.5 py-px -rotate-90 bottom-bottom-audio md:bottom-bottom-audio-md lg:bottom-bottom-audio-lg font-sans font-bold leading-130 right-screen-x-audio md:right-screen-x-audio-md lg:right-screen-x-audio-lg"
     >
-      <span className="transition-colors duration-300 text-dark-gray hover:text-accent">
-        Sound
-      </span>
+      <span className="transition-colors duration-300 text-dark-gray hover:text-accent">Sound</span>
       <span className="*:block relative">
         <span ref={onRef} className="relative">
           On
